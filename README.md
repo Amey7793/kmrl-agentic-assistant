@@ -78,8 +78,7 @@ KMRL/
     │   ├── process_images.py         # Images/*              → processed_images.json (via OCR)
     │   └── index_documents.py        # JSONs + PDFs + images → chroma_db/ + bm25_index.pkl
     ├── ui/app.py                     # Streamlit chat interface
-    ├── gtfs.db, lost_found.db, chroma_db/, bm25_index.pkl, processed_images.json  # generated (gitignored)
-    └── kb_index.pkl                  # unused legacy artifact, safe to delete
+    └── gtfs.db, lost_found.db, chroma_db/, bm25_index.pkl, processed_images.json  # generated, committed (~37MB total)
 ```
 
 ## Setup
@@ -92,7 +91,7 @@ ollama pull llama3.1:8b
 ollama pull nomic-embed-text
 ```
 
-The databases/indices under `kmrl_agent/` (`gtfs.db`, `lost_found.db`, `chroma_db/`, `bm25_index.pkl`, `processed_images.json`) are gitignored build artifacts. If they're missing, rebuild them once, in order:
+The databases/indices under `kmrl_agent/` (`gtfs.db`, `lost_found.db`, `chroma_db/`, `bm25_index.pkl`, `processed_images.json`, ~37MB total) are committed to the repo, so a fresh clone works immediately — no ingestion step required. `Knowledge Base/PDFs/` is the one thing *not* committed (363MB, one file exceeds GitHub's 100MB limit); you only need it if you want to rebuild the knowledge base index from scratch:
 
 ```powershell
 python kmrl_agent/data_ingestion/build_gtfs_db.py
