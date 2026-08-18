@@ -1,0 +1,3 @@
+# Force LF line endings for shell scripts, even when checked out on Windows -
+# a CRLF entrypoint.sh fails to run inside the Linux container ("bad interpreter").
+*.sh text eol=lf
