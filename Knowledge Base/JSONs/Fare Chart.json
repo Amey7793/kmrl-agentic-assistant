@@ -1,0 +1,15 @@
+{
+  "url": "https://kochimetro.org/fare-chart/",
+  "title": "Fares & Offers – Kochi Metro Rail Ltd.",
+  "scraped_at": "2026-08-10T12:34:18.989396+00:00",
+  "sections": [
+    {
+      "heading": "Fare Chart",
+      "text": "- All fares are in Indian Rupee.\n- The ticket valid for exit at destination station Automatic gates upto 120 minutes after entry through Automatic Gates at Origin Station, otherwise the patron needs to pay overstay amount of Rs 10/- per hour up to Max. of Rs 50/-\n- If the patron tried to exit after 20 minutes from the same station,he has to be charged by an overstay amount Rs 10/- per/hour up to maximum of Rs 50/-\n- Maximum 3 children of height upto 90cm and below can travel free (Not applicable for group booking) if accompanied by an adult, Children above 90cm full fare will be charged."
+    },
+    {
+      "heading": "Offers",
+      "text": "Click here for bulk booking"
+    }
+  ]
+}

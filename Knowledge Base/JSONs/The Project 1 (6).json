@@ -1,0 +1,27 @@
+{
+  "index": 5,
+  "headers": [
+    "Construction Methodology",
+    "Rolling Stock",
+    "Power Supply Source",
+    "Traction",
+    "Signalling, Train Control & Telecommunication"
+  ],
+  "rows": [
+    [
+      "Elevated viaduct carried over pre-stressed concrete ‘U/I’ shaped girders with pile/open foundations"
+    ],
+    [
+      "2.9 m wide modern rolling stock with stainless steel body, Standard gauge, Axle load of 16 tonnes"
+    ],
+    [
+      "110 KV AC"
+    ],
+    [
+      "2.9 m wide modern rolling stock with stainless steel body, Standard gauge, Axle load of 16 tonnes"
+    ],
+    [
+      "Communication Based Train control – ATC with ATO, ATS, ATP & CBI"
+    ]
+  ]
+}

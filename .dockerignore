@@ -1,0 +1,21 @@
+.git
+.gitignore
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# Source data (mounted as a volume instead - 363MB of PDFs shouldn't live in the image)
+Knowledge Base/
+
+# Generated artifacts (mounted as a volume so they persist across rebuilds)
+kmrl_agent/chroma_db/
+kmrl_agent/gtfs.db
+kmrl_agent/lost_found.db
+kmrl_agent/bm25_index.pkl
+kmrl_agent/kb_index.pkl
+kmrl_agent/processed_images.json
+
+*.md
+*.html
+Dockerfile
+docker-compose.yml

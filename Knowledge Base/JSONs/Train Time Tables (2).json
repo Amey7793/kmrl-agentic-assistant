@@ -1,0 +1,26 @@
+{
+  "index": 1,
+  "headers": [
+    "Headway – Sunday (w.e.f 17-February-2026)"
+  ],
+  "rows": [
+    [
+      "Route",
+      "Morning + Off Peak",
+      "Evening Peak",
+      "Service Time"
+    ],
+    [
+      "ALUVA → TPHT",
+      "09 min 05 sec",
+      "09 min 05 sec",
+      "07:30 – 23:00 hrs"
+    ],
+    [
+      "TPHT → ALUVA",
+      "09 min 05 sec",
+      "09 min 05 sec",
+      "07:30 – 23:00 hrs"
+    ]
+  ]
+}

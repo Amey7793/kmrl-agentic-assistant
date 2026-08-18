@@ -1,0 +1,115 @@
+{
+  "index": 0,
+  "headers": [],
+  "rows": [
+    [
+      "Rs. in Lakh"
+    ],
+    [
+      "Particulars",
+      "2023-24",
+      "2022-23"
+    ],
+    [
+      "Income"
+    ],
+    [
+      "Fare Box Collection",
+      "9988.14",
+      "7548.62"
+    ],
+    [
+      "Non Fare box collection",
+      "5142.01",
+      "4335.82"
+    ],
+    [
+      "Other Income",
+      "1692.86",
+      "1336.89"
+    ],
+    [
+      "Total Operating Revenue (A)",
+      "16823.01",
+      "13221.33"
+    ],
+    [
+      "Grant /other Amortisation",
+      "7817.88",
+      "6877.43"
+    ],
+    [
+      "Total Non-Operating Revenue",
+      "7817.88",
+      "6877.43"
+    ],
+    [
+      "Total",
+      "24640.89",
+      "20098.76"
+    ],
+    [
+      "Expenses"
+    ],
+    [
+      "Expenses related to Metro operations (B)",
+      "14529.06",
+      "12684.99"
+    ],
+    [
+      "Expense related to Non-Motorised Transport Initiatives by KMRL",
+      "6030.72",
+      "204.41"
+    ],
+    [
+      "Total",
+      "20559.78",
+      "12889.40"
+    ],
+    [
+      "Operating Surplus (A – B)",
+      "2293.95",
+      "536.34"
+    ],
+    [
+      "Profit/(Loss) before Interest and Depreciation",
+      "4081.11",
+      "7209.36"
+    ],
+    [
+      "Finance Charges",
+      "29422.31",
+      "22208.39"
+    ],
+    [
+      "Gross Profit/(Loss)",
+      "-25341.2",
+      "-14999.03"
+    ],
+    [
+      "Add :Other Comprehensive Income/(Loss)",
+      "-54.57",
+      "-75.25"
+    ],
+    [
+      "Less :Provision for Depreciation",
+      "17953.69",
+      "18497.35"
+    ],
+    [
+      "Net Profit/(Loss) before Tax",
+      "-43349.46",
+      "-33571.63"
+    ],
+    [
+      "Provision for Tax",
+      "NIL",
+      "NIL"
+    ],
+    [
+      "Net Profit/(Loss) after Tax",
+      "-43349.46",
+      "-33571.63"
+    ]
+  ]
+}

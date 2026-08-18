@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Source PDFs - 363MB total, some files may exceed GitHub's 100MB/file limit
+Knowledge Base/PDFs/
+
+# Generated artifacts - rebuild via kmrl_agent/data_ingestion/*.py instead of committing
+kmrl_agent/chroma_db/
+kmrl_agent/gtfs.db
+kmrl_agent/lost_found.db
+kmrl_agent/bm25_index.pkl
+kmrl_agent/kb_index.pkl
+kmrl_agent/processed_images.json
+
+# Streamlit
+.streamlit/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/

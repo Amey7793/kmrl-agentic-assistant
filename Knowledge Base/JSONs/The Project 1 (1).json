@@ -1,0 +1,31 @@
+{
+  "index": 0,
+  "headers": [
+    "Design Speed",
+    "Average speed",
+    "Train Length",
+    "Estimated Completion Cost",
+    "Fare Collection",
+    "Capacity/Train"
+  ],
+  "rows": [
+    [
+      "90 km per hour"
+    ],
+    [
+      "35 km per hour"
+    ],
+    [
+      "66.55 metres (3 coaches)"
+    ],
+    [
+      "Rs 5181.79 Crore"
+    ],
+    [
+      "Automatic fare collection system with combination of smart cards & RFID / QR Code tickets"
+    ],
+    [
+      "975 passengers (Crush load) (Seating – 138)"
+    ]
+  ]
+}

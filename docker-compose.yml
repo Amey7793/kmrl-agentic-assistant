@@ -1,0 +1,29 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: kmrl-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+
+  app:
+    build: .
+    container_name: kmrl-app
+    depends_on:
+      - ollama
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+    ports:
+      - "8501:8501"
+    volumes:
+      # Code lives on the host so edits show up without a rebuild.
+      - ./kmrl_agent:/app/kmrl_agent
+      - ./main.py:/app/main.py
+      # Read-only source data, only needed if you run the ingestion scripts.
+      - "./Knowledge Base:/app/Knowledge Base:ro"
+    restart: unless-stopped
+
+volumes:
+  ollama_data:

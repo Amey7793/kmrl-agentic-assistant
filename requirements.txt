@@ -1,0 +1,35 @@
+# ============================================================
+# KMRL Agentic AI Assistant — Python Dependencies
+# ============================================================
+# Install with: pip install -r requirements.txt
+#
+# NOTE: Ollama must be installed separately (not a pip package).
+#   → Download: https://ollama.com/download
+#   → Pull models after install:
+#       ollama pull llama3.1:8b
+#       ollama pull nomic-embed-text
+# ============================================================
+
+# ── LLM / Ollama Client ────────────────────────────────────
+ollama                        # Python client for Ollama LLM (llama3.1:8b + nomic-embed-text)
+
+# ── Vector Database ────────────────────────────────────────
+chromadb                      # Persistent HNSW vector store for dense RAG retrieval
+
+# ── Sparse / Keyword Retrieval ─────────────────────────────
+rank-bm25                     # BM25Okapi sparse keyword index for hybrid retrieval
+
+# ── Numerical / Scientific ────────────────────────────────
+numpy                         # Array ops for BM25 scoring and RRF fusion
+
+# ── Graph Routing ─────────────────────────────────────────
+networkx                      # Shortest-path fallback in GTFSTool.find_route()
+
+# ── Data Ingestion ────────────────────────────────────────
+pandas                        # CSV → SQLite ingestion in build_gtfs_db.py
+pymupdf                       # PDF text extraction for Annual Reports (index_documents.py)
+Pillow                        # Image metadata extraction in process_images.py
+rapidocr-onnxruntime          # Automated OCR text extraction for visual infographics
+
+# ── Web UI ────────────────────────────────────────────────
+streamlit                     # Streamlit chat interface (ui/app.py)

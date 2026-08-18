@@ -1,0 +1,26 @@
+{
+  "index": 2,
+  "headers": [
+    "Headway – Public Holidays (w.e.f 17-February-2026)"
+  ],
+  "rows": [
+    [
+      "Route",
+      "08:00 – 20:00 hrs",
+      "Other Hours",
+      "Service Time"
+    ],
+    [
+      "ALUVA → TPHT",
+      "09 min 45 sec",
+      "11 min",
+      "06:00 – 23:00 hrs"
+    ],
+    [
+      "TPHT → ALUVA",
+      "09 min 45 sec",
+      "11 min",
+      "06:00 – 23:00 hrs"
+    ]
+  ]
+}
