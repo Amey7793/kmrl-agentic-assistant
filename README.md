@@ -111,9 +111,17 @@ streamlit run kmrl_agent/ui/app.py           # Web chat UI at http://localhost:8
 ### Option B — Docker
 
 ```powershell
+# First time 
 docker compose up --build
 docker compose exec ollama ollama pull llama3.1:8b
 docker compose exec ollama ollama pull nomic-embed-text
+
+# Data Ingestion
+docker compose exec app python /app/kmrl_agent/data_ingestion/<file_name>
+
+# Everytime we want to run application
+docker compose up
+docker compose down
 ```
 
 Then open `http://localhost:8501`. The `app` container mounts `kmrl_agent/` from the host, so your local databases/indices (and any code edits) are used directly — no need to re-run ingestion inside the container if you've already built them locally.
