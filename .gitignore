@@ -15,10 +15,17 @@ Knowledge Base/PDFs/
 # Unused legacy artifact - not referenced anywhere in the codebase
 kmrl_agent/kb_index.pkl
 
-# NOTE: gtfs.db, lost_found.db, bm25_index.pkl, processed_images.json, and
-# chroma_db/ are intentionally committed (not ignored) - they're small
-# (~37MB total) and collaborators need them to run the app without first
-# installing Ollama and re-running the full ingestion pipeline.
+# Generated artifacts that entrypoint.sh rebuilds automatically on container
+# start from files that ARE committed (OpenData/, Lost and Found.json, Images/) -
+# no need to track the output.
+kmrl_agent/gtfs.db
+kmrl_agent/lost_found.db
+kmrl_agent/processed_images.json
+
+# NOTE: kmrl_agent/chroma_db/ and kmrl_agent/bm25_index.pkl are NOT ignored -
+# they can only be rebuilt from Knowledge Base/PDFs/, which is never committed
+# (363MB, one file over GitHub's 100MB limit). Without these committed, kb_search
+# permanently loses Annual Report / policy retrieval for anyone who clones fresh.
 
 # Streamlit
 .streamlit/
